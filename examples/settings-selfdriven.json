@@ -1,0 +1,135 @@
+{
+	"entityos": {
+		"hostname": "api.entityos.cloud",
+		"logon": "api@selfdriven", 
+		"email": "team@slfdrvn.io",
+		"testing": {
+			"status": "true",
+			"showData": "true",
+			"break": "-"
+		},
+		"convert": "true"
+	},
+	"ssi": {
+		"frameworks": [
+			{
+				"name": "dsociety",
+				"urls": {
+					"info": "https://dsociety.io"
+				},
+				"did": {
+					"methods": [
+						{
+							"name": "dsociety",
+							"specification": "ed25519",
+							"description": "DID based on Ed25519 with SHA256 hash as Base58."
+						}
+					]
+				}
+			},
+			{
+				"name": "selfdriven",
+				"urls": {
+					"info": "https://selfdriven.foundation/identity/#ssi"
+				},
+				"did": {
+					"methods": [
+						{
+							"name": "selfdriven",
+							"specification": "ed25519",
+							"encoding": "base58",
+							"hash": "none",
+							"description": "DID based on Ed25519 public key encoded into Base58."
+						},
+						{
+							"name": "selfdriven:anon:",
+							"specification": "ed25519",
+							"hash": "blake2b",
+							"encoding": "base16",
+							"description": "DID based on Ed25519 public key hashed using Blake2b encoded as Base16 (Hex)."
+						},
+						{
+							"name": "selfdriven:sdi",
+							"specification": "sdi",
+							"description": "The selfdriven SDI assigned to each community member. It uses the common UUID format. e.g. ddea7071-c37b-4c3f-ab69-603870f5c9f6."
+						},
+						{
+							"name": "selfdriven:sdip",
+							"specification": "sdip",
+							"description": "The SHA256 hashed selfdriven SDI assigned to each community member."
+						},
+						{
+							"name": "selfdriven:cardano",
+							"specification": "bip32-ed25519",
+							"description": "Uses the Cardano key/hash/addressing based on BIP32-Ed25519."
+						},
+						{
+							"name": "selfdriven:community",
+							"specification": "ed25519",
+							"description": "DID based on Ed25519 with SHA256 hash as Base58."
+						}
+					]
+				}
+			}
+		],
+		"specifications": [
+			{
+				"name": "secp256k1",
+				"curve": "secp256k1",
+				"keyVerificationType": "EcdsaSecp256k1VerificationKey2019",
+				"keyAuthenticationType": "EcdsaSecp256k1SignatureAuthentication2019",
+				"publicKey": {
+					"name": "publicKeyHex",
+					"encoding": "hex"
+				}
+			},
+			{
+				"name": "ed25519",
+				"curve": "ed25519",
+				"keyVerificationType": "Ed25519VerificationKey2020",
+				"keyAuthenticationType": "Ed25519SignatureAuthentication2020",
+				"publicKey": {
+					"name": "publicKeyMultibase",
+					"encoding": "base58"
+				}
+			}
+		]
+	},
+	"protect":
+	{
+		"notes": "selfdrivenOcto keys for encryption/decryption and signing of data." 
+	},
+	"selfdriven":
+	{
+		"actionTypes":
+		{
+			"achievement": "1742"
+		}
+	},
+	"rules": [
+		{
+			"env": "eosYEAdnJP45wCVkdFe",
+			"set": "entityos.password"
+		},
+		{
+			"env": "keyLeVUhtcr5uEfoEfp",
+			"set": "protect.key"
+		},
+		{
+			"env": "ivmeXcO9yL21O8f1JT",
+			"set": "protect.iv"
+		},
+		{
+			"env": "prvkeyhexMxsgP9vMHe5YSSex",
+			"set": "protect.sign.privateKeyHex"
+		},
+		{
+			"env": "pubkeyhexY7YFBxrxAQzEvWVg",
+			"set": "protect.sign.publicKeyHex"
+		},
+		{
+			"env": "pubkeyidY7YFBxrxAQzEvWVg",
+			"set": "protect.sign.publicKeyID"
+		}
+	]
+}

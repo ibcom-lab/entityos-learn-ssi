@@ -1,0 +1,21 @@
+{
+	"context": "lab",
+	"body":
+	{
+		"_context": "selfdriven-lab",
+		"method": "ssi-generate-account",
+		"data":
+		{
+			"_userkey": "2174af85-2728-4330-94dc-0b8be2b12947",
+			"userkey": "a3847801-1811-4667-8253-fdecaab8cac1",
+			"_conversationkey": "75e951a6-8d93-4a7e-bf91-83a4ea5af648",
+			"conversationkey": "7aff46ac-2ef5-4ccc-88ea-8f62b4898246",
+			"reset": false
+		}
+	},
+	"queryStringParameters": {},
+	"headers":
+	{
+		"x-api-key": "2174af85-2728-4330-94dc-0b8be2b12947|kFbqCip4DAioI28wx5Sobef6qtldbO0r6MV2SCWJ5sywKkuH"
+	}
+}

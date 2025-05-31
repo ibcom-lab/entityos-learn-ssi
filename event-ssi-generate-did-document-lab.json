@@ -1,0 +1,10 @@
+{
+	"body": {
+		"method": "ssi-generate-did-document",
+		"context": "lab",
+		"data": {}
+	},
+	"queryStringParameters": {},
+	"headers": {},
+	"path": "/"
+}

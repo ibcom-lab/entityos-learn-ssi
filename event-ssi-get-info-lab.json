@@ -1,0 +1,9 @@
+{
+	"body": {
+		"method": "ssi-get-info",
+		"context": "lab",
+		"data": {}
+	},
+	"queryStringParameters": {},
+	"headers": {}
+}

@@ -1,0 +1,25 @@
+{
+	"id": "did:selfdriven:MphfTwt7Csv2eTyzdZcgDFajuWRfcgU1kTZvt2ZinYEXaBvRZt1hCs2i2FJkwwvi8FLbsRchmwTpNBGqUy8zDsKj",
+	"verificationMethod": [
+		{
+			"id": "did:selfdriven:MphfTwt7Csv2eTyzdZcgDFajuWRfcgU1kTZvt2ZinYEXaBvRZt1hCs2i2FJkwwvi8FLbsRchmwTpNBGqUy8zDsKj#keys-1",
+			"type": "Ed25519VerificationKey2020",
+			"controller": "did:selfdriven:MphfTwt7Csv2eTyzdZcgDFajuWRfcgU1kTZvt2ZinYEXaBvRZt1hCs2i2FJkwwvi8FLbsRchmwTpNBGqUy8zDsKj",
+			"publicKeyMultibase": "zMphfTwt7Csv2eTyzdZcgDFajuWRfcgU1kTZvt2ZinYEXaBvRZt1hCs2i2FJkwwvi8FLbsRchmwTpNBGqUy8zDsKj"
+		}
+	],
+	"authentication": [
+		{
+			"type": "Ed25519SignatureAuthentication2020",
+			"publicKey": "did:selfdriven:MphfTwt7Csv2eTyzdZcgDFajuWRfcgU1kTZvt2ZinYEXaBvRZt1hCs2i2FJkwwvi8FLbsRchmwTpNBGqUy8zDsKj#keys-1"
+		}
+	],
+	"service": [
+		{
+			"id": "did:selfdriven:MphfTwt7Csv2eTyzdZcgDFajuWRfcgU1kTZvt2ZinYEXaBvRZt1hCs2i2FJkwwvi8FLbsRchmwTpNBGqUy8zDsKj#did-resolver",
+			"type": "DIDResolver",
+			"serviceEndpoint": "http://ssi.api.slfdrvn.io"
+		}
+	],
+	"@context": "https://www.w3.org/ns/did/v1"
+}

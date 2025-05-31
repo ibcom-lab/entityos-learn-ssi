@@ -1,0 +1,130 @@
+{
+	"entityos": {
+		"hostname": "api.entityos.cloud",
+		"logon": "api-lab@entityos.cloud",
+		"email": "team@entityos.cloud",
+		"testing": {
+			"status": "true",
+			"showData": "true",
+			"break": "-"
+		},
+		"convert": "true"
+	},
+	"ssi": {
+		"frameworks": [
+			{
+				"name": "dsociety",
+				"urls": {
+					"info": "https://dsociety.io"
+				},
+				"did": {
+					"methods": [
+						{
+							"name": "dsociety",
+							"specification": "ed25519",
+							"description": "DID based on Ed25519 with SHA256 hash as Base58."
+						}
+					]
+				}
+			},
+			{
+				"name": "entityos",
+				"urls": {
+					"info": "https://learn.entityos.cloud/identity/#ssi"
+				},
+				"did": {
+					"methods": [
+						{
+							"name": "entityos",
+							"specification": "ed25519",
+							"encoding": "base58",
+							"description": "DID based on Ed25519 public key encoded into Base58."
+						},
+						{
+							"name": "entityos:anon:",
+							"specification": "ed25519",
+							"hash": "blake2b",
+							"encoding": "base16",
+							"description": "DID based on Ed25519 public key hashed using Blake2b encoded as Base16 (Hex)."
+						},
+						{
+							"name": "entityos:id",
+							"specification": "id",
+							"description": "DID based on the entityos SDI assigned to each community member. It uses the common UUID format. e.g. ddea7071-c37b-4c3f-ab69-603870f5c9f6."
+						},
+						{
+							"name": "entityos:idh",
+							"specification": "idh",
+							"hash": "sha256",
+							"description": "DID based on the SHA256 hashed entityos SDI assigned to each community member."
+						},
+						{
+							"name": "entityos:cardano",
+							"specification": "ed25519-bip32",
+							"encoding": "bech32",
+							"description": "DID based on the Cardano key/hash/addressing based on Ed25519, BIP32 & Bech32."
+						}
+					]
+				}
+			}
+		],
+		"specifications": [
+			{
+				"name": "secp256k1",
+				"curve": "secp256k1",
+				"keyVerificationType": "EcdsaSecp256k1VerificationKey2019",
+				"keyAuthenticationType": "EcdsaSecp256k1SignatureAuthentication2019",
+				"publicKey": {
+					"name": "publicKeyHex",
+					"encoding": "hex"
+				}
+			},
+			{
+				"name": "ed25519",
+				"curve": "ed25519",
+				"keyVerificationType": "Ed25519VerificationKey2020",
+				"keyAuthenticationType": "Ed25519SignatureAuthentication2020",
+				"publicKey": {
+					"name": "publicKeyMultibase",
+					"encoding": "base58"
+				}
+			}
+		]
+	},
+	"protect":
+	{
+		"notes": "entityos keys for encryption/decryption and signing of data." 
+	},
+	"rules": [
+		{
+			"env": "password-lab",
+			"set": "entityos.password",
+			"default": ""
+		},
+		{
+			"env": "keyLeVUhtcr5uEfoEfp-lab",
+			"set": "protect.key",
+			"default": ""
+		},
+		{
+			"env": "ivmeXcO9yL21O8f1JT-lab",
+			"set": "protect.iv",
+			"default": ""
+		},
+		{
+			"env": "prvkeyhexMxsgP9vMHe5YSSex-lab",
+			"set": "protect.sign.privateKeyHex",
+			"default": ""
+		},
+		{
+			"env": "pubkeyhexY7YFBxrxAQzEvWVg-lab",
+			"set": "protect.sign.publicKeyHex",
+			"default": ""
+		},
+		{
+			"env": "pubkeyidY7YFBxrxAQzEvWVg-lab",
+			"set": "protect.sign.publicKeyID",
+			"default": ""
+		}
+	]
+}
