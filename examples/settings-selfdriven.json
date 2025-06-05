@@ -1,8 +1,8 @@
 {
 	"entityos": {
 		"hostname": "api.entityos.cloud",
-		"logon": "api@selfdriven", 
-		"email": "team@slfdrvn.io",
+		"logon": "", 
+		"email": "",
 		"testing": {
 			"status": "true",
 			"showData": "true",

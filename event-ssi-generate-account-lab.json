@@ -6,14 +6,14 @@
 		"method": "ssi-generate-account",
 		"data":
 		{
-			"userkey": "",
-			"conversationkey": "",
+			"userkey": "a3847801-1811-4667-8253-fdecaab8cac1",
+			"conversationkey": "7aff46ac-2ef5-4ccc-88ea-8f62b4898246",
 			"reset": false
 		}
 	},
 	"queryStringParameters": {},
 	"headers":
 	{
-		"x-api-key": "o"
+		"x-api-key": ""
 	}
 }
