@@ -43,8 +43,7 @@
 
 	Event Data:
 	{
-	  "body": {
-	    "apikey": "e7849d3a-d8a3-49c7-8b27-70b85047e0f1"
+	  "body": {e7849d3a-d8a3-49c7-8b27-70b85047e0f1"
 	  },
 	  "queryStringParameters": {},
 	  "headers": {}
